@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dutch Anywhere</title>
+    <link rel="stylesheet" type= "text/css" href= "assets/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+        <img src="logo.png" alt="Logo" class="logo">
+            <h1>Dutch Anywhere</h1>
+        </div>
+    <div id="menu-placeholder"></div>
+    <script>
+        fetch('assets/menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('menu-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading menu:', error));
+    </script>
+    </header>
+    
+    <section id="hero">
+        <h2>Welcome to Dutch Anywhere!</h2>
+        <p>Scheldwoorden, iedereen heeft er een mening over. Zijn het vulgaire uitlatingen van woede en haat, of zijn ze het hoogtepunt van creatief en humoristisch taalgebruik? Wat jouw standpunt ook is, op deze website vind je alle informatie over dit interessante facet van onze prachtige taal.</p>
+        <a href="#about" class="btn">Scheldwoordenboek</a>
+    </section>
+
+    
+    <section id="Over ons">
+        <h3>Over ons</h3>
+        <p>Nederlanders staan bekend om hun zeemanstaal; zelfs in formele situaties passeren de klote's, de kutten en de verdommingen regelmatig de revu. De Nederlandse scheldcultuur wordt door sommigen gezien als een vloek en door anderen als een zegen. Een ding is zeker: het Nederlands zou het Nederlands niet zijn zonder haar vloeken. Op onze website vind je een uitgebreid overzicht van 's vaderlands reservoir aan smaadwoorden: van grof tot lief, van oud-Hollandsch tot straattaal; je vindt het hier allemaal.</p>
+    </section>
+    
+    <section id="Artikelen">
+        <h3>Onze laatste artikelen over schelden</h3>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2024 Scheldwoorden unlimited. All rights reserved.</p>
+        <ul>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://facebook.com">Facebook</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
