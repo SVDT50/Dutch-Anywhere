@@ -41,6 +41,8 @@ header img.logo {
     max-width: 100px; /* Adjust size to avoid overlapping with the h1 */
     height: auto;
     margin-bottom: 10px; /* Add space below the logo */
+    float: left;
+    margin-right: 20px;
 }
 
 header h1 {
